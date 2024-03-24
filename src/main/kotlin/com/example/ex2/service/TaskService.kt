@@ -20,7 +20,7 @@ class TaskService(
         var minUtil = 1.00f
         for (server in servers) {
             if (server.util < minUtil
-                && (1-server.util)*128 > taskRequest.size) {
+                && (1-server.util)*128 >= taskRequest.size) {
                 minUtil = server.util
                 serverFound = server
             }
