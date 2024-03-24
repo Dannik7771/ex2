@@ -8,7 +8,7 @@ services:
       dockerfile: ./Dockerfile
     container_name: app
     ports:
-      - 9024:8080
+      - 9024:9024
     depends_on:
       - db
     environment:
